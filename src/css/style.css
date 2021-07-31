@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  background-color: slateblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+input,
+button,
+a {
+  padding: 10px;
+  border: 0;
+  text-decoration: none;
+  outline: 0;
+}
+
+header {
+  line-height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header a {
+  color: silver;
+}
+header a:hover {
+  color: white;
+}
+header .g {
+  color: #f1f1f1;
+}
+footer {
+  line-height: 10vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.container {
+  height: 80vh;
+  overflow: auto;
+}
+
+.login {
+  background-color: white;
+  width: 30%;
+  padding: 2%;
+  margin: 2% auto;
+  box-shadow: 0 10px 10px black;
+}
+
+.login input {
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+
+.login select {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  margin-top: 10px;
+}
+
+.login button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.loader-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-bg .loader {
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  border-radius: 100%;
+  border-top: 40px solid red;
+  border-left: 40px solid lime;
+  border-right: 40px solid yellow;
+  border-bottom: 40px solid orange;
+  animation: abc 1s infinite;
+}
+.bold {
+  font-size: large;
+}
+
+@keyframes abc {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* dashbord starts */
+.home {
+  padding: 2%;
+  display: flex;
+  flex-flow: wrap;
+}
+.home .home-item {
+  padding: 2%;
+  margin: 2%;
+  background-color: White;
+  color: black;
+  border-radius: 20px;
+  width: 20%;
+  box-shadow: 0 10px 10px black;
+}
+.home .home-item a {
+  background-color: black;
+  color: white;
+  display: block;
+  border-radius: 20px;
+}
+/* dashbord ends */
+
+.wrapper {
+  padding: 0 2%;
+}
+table {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 10px 10px black;
+  text-align: center;
+}
+table thead {
+  background-color: black;
+  color: white;
+}
+.e {
+  background-color: orange;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+.d {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* batch styling starts */
+.b-flex {
+  display: flex;
+}
+.b-flex .item1 {
+  width: 12%;
+  padding: 1%;
+}
+.b-flex .scroll {
+  overflow: auto;
+  height: 72vh;
+}
+.b-flex p {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  opacity: 0.6;
+  cursor: move;
+}
+.b-flex p.active {
+  opacity: 1;
+}
+.b-flex .item2 {
+  width: 55%;
+  padding: 1%;
+}
+.b-flex h5 {
+  padding: 5px;
+  background-color: white;
+  border-left: 7px solid #000;
+  font-weight: bold;
+  display: inline-table;
+}
+/* batch styling ends */
+
+/* planner styling starts */
+.wrapper {
+  padding: 2%;
+}
+.calendar {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+}
+.calendar .item {
+  width: calc(86% / 7);
+  background-color: white;
+  color: black;
+  margin: 0.5%;
+  padding: 0.5%;
+}
+.calendar .item:hover {
+  cursor: pointer;
+}
+.calendar .item .date {
+  text-align: center;
+}
+.calendar .item.active {
+  background-color: black;
+}
+.calendar .item.active .date {
+  color: white;
+}
+.calendar .item.active h3 {
+  color: white;
+}
+.sidebar {
+  position: fixed;
+  top: 15vh;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 10px 10px black;
+  padding: 20px;
+  transition: 1s;
+  transform: translateX(100%);
+}
+.sidebar.active {
+  transform: translateX(0%);
+}
+label.green {
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+label.red {
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+/* planner styling ends */
